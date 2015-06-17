@@ -10,6 +10,7 @@
             android:label="@string/__goreinu"
             android:enabled="false"
             android:taskAffinity="com.kgmyshin.goreinu"
+            android:icon="@drawable/goreinu_icon"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
