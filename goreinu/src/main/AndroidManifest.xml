@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kgmyshin.goreinu" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name="com.kgmyshin.goreinu.GoreinuActivity"
+            android:label="@string/__goreinu"
+            android:enabled="false"
+            android:taskAffinity="com.kgmyshin.goreinu"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:enabled="false"
+            android:name="com.kgmyshin.goreinu.GoreinuService"
+            />
+        <receiver
+            android:name=".GoreinuReceiver"
+            android:enabled="false"
+            >
+            <intent-filter>
+                <action android:name="com.kgmyshin.goreinu.intent"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,1 +1,1 @@
-include ':sample', ':dumper'
+include ':sample', ':goreinu', ':goreinu-no-op'

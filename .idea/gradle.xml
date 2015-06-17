@@ -10,7 +10,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/dumper" />
+            <option value="$PROJECT_DIR$/goreinu" />
+            <option value="$PROJECT_DIR$/goreinu-no-op" />
             <option value="$PROJECT_DIR$/sample" />
           </set>
         </option>
