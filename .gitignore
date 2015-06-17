@@ -1,7 +1,45 @@
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+# mac
 .DS_Store
-/build
-/captures
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+proguard/
+
+# Local configuration file (sdk path, etc)
+local.properties
+gradle.properties
+
+# roboelectric generated files
+tmp/
+
+# eclipse workspace configuration
+.metadata/
+
+# crashlytics build identifier
+main/res/values/com_crashlytics_export_strings.xml
+
+# Android Studio related
+.idea
+.gradle
+/*/local.properties
+/*/out
+*/build/*
+*/*/build/*
+build/*
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
