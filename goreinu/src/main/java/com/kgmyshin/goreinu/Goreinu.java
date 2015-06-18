@@ -23,7 +23,7 @@ public class Goreinu {
         setEnabled(context, GoreinuReceiver.class, true);
     }
 
-    public static void setEnabled(Context context, final Class<?> componentClass,
+    private static void setEnabled(Context context, final Class<?> componentClass,
                                   final boolean enabled) {
         final Context appContext = context.getApplicationContext();
         enableExecutor.execute(new Runnable() {
