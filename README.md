@@ -1,3 +1,5 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Goreinu-green.svg?style=flat)](https://android-arsenal.com/details/1/2000)
+
 # Goreinu
 
 copy Application Directory files to internal sdcard.(`/data/data/package_name/... -> /sdcard/Goreinu/package_name`).
