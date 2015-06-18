@@ -38,7 +38,7 @@ There are two ways.
 - send intent from adb.
 
 ```
-adb shell am  broadcast -a com.kgmyshin.goreinu.intent
+adb shell am broadcast -a com.kgmyshin.goreinu.intent
 ```
 
 ## License
