@@ -2,7 +2,7 @@
 
 # Goreinu
 
-copy Application Directory files to internal sdcard.(`/data/data/package_name/... -> /sdcard/Goreinu/package_name`).
+Goreinu allows to copy application files on sdcard.(`/data/data/package_name/... -> /sdcard/Goreinu/package_name`).
 
 ## Getting started
 
