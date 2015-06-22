@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.File;
@@ -18,7 +19,7 @@ import java.io.OutputStream;
  * Created by kgmyshin on 15/06/17.
  */
 public class GoreinuService extends IntentService {
-
+    private static final String TAG = GoreinuService.class.getSimpleName();
     private Handler handler = new Handler(Looper.getMainLooper());
 
     public GoreinuService(String name) {
@@ -67,10 +68,12 @@ public class GoreinuService extends IntentService {
             String[] files = src.list();
             for (String file : files) {
                 File srcFile = new File(src, file);
-                File destFile = new File(dest, file);
-                copy(srcFile, destFile);
+                if (srcFile.exists()) {
+                    File destFile = new File(dest, file);
+                    copy(srcFile, destFile);
+                }
             }
-        } else {
+        } else if (src.isFile()) {
             InputStream in = new FileInputStream(src);
             OutputStream out = new FileOutputStream(dest);
             byte[] buff = new byte[1024];
@@ -80,6 +83,8 @@ public class GoreinuService extends IntentService {
             }
             in.close();
             out.close();
+        } else {
+            Log.d(TAG, src.toString() + " file is symbolic link");
         }
     }
 
